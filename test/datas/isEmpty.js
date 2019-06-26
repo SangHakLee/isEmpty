@@ -7,12 +7,12 @@ module.exports = {
 		new Proxy({}, {})
 	]),
 	invalid: Object.freeze([
-		true, false,
-		NaN, new Date(), new RegExp(), new Error(),
+		true, false, new Boolean(),
+		new Number(), NaN, new Date(), new RegExp(), new Error(),
 		Math,
 		1, 1.0, 'string' , [1], {a:1},
 		`${1}`,
-		function() {}, function f() {}, function*() {},
+		new Function(), function() {}, function f() {}, function*() {},
 		class MyClass {},
 		Symbol, Symbol(),
 		new Map(), new WeakMap(), new Set(), new WeakSet(),
