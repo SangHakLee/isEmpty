@@ -9,6 +9,7 @@
     "coverage": "npm run eslint && nyc --check-coverage npm run test",
     "coverage:report": "nyc --reporter=html npm run test",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+    "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "jsdoc": "jsdoc -c jsdoc.json --readme README.md"
   },
   "nyc": {
@@ -44,6 +45,7 @@
   },
   "homepage": "https://github.com/SangHakLee/isEmpty#readme",
   "devDependencies": {
+    "codecov": "^3.5.0",
     "countly-docdash": "^0.5.0",
     "coveralls": "^3.0.4",
     "debug": "^4.1.1",

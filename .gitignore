@@ -1,5 +1,7 @@
 # coverage
 .coveralls.yml
+.codecov.yml
+coverage.lcov
 
 #----------- github auto gen
 # Logs
